@@ -1,0 +1,75 @@
+//////////////////////////////////
+//                              //
+// Stylesheet for Grid template //
+// Author: Adam Hjerpe          //
+// Licence: MIT                 //
+//                              //
+//////////////////////////////////
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Variable and mixin import
+// Keep this as first import, other stylesheets may be dependent on this file.
+@import "var";
+@import "mixin";
+
+// Compass import
+@import "compass";
+
+// CSS reset
+@import "reset";
+
+// Grid import
+@import "grid/_12cols";
+
+// Typeplate import
+@import "typeplate";
+
+.box {
+    border-sizing: border-box;
+    padding: 1em;
+    margin: 0 1em 1em 0;
+    border-radius: 3px;
+}
+
+html, body {
+    background: $background;
+    height: 100%;
+}
+
+//html, body
+
+.wrapper {
+    background: darken($bg-col, 20%);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//.wrapper
+
+.main-header {
+    @extend .span_12_of_12;
+}
+
+//.main-header
+
+.logo {}
+
+//.logo
+
+.main-nav {
+    ul {}
+    //ul
+    li {}
+    //li
+    a {}
+    //a
+}
+
+//.main-nav
+
+.main-footer {}
+
+//.main-footer
