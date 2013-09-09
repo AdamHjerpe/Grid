@@ -19,16 +19,20 @@
 @import "reset";
 
 // Grid import
-@import "grid";
+// @import "grid";
+@import "12col";
 
 // Typeplate import
 @import "typeplate";
+@import "icon";
 
 .box {
-  border-sizing: border-box;
+  box-sizing: border-box;
   padding: 1em;
-  margin: 0 1em 1em 0;
+  margin-top: 0.8%;
+  margin-bottom: 0.8%;
   border-radius: 3px;
+  background: darken($bg-col, 20%);
 }
 
 html, body {
@@ -36,8 +40,9 @@ html, body {
   height: 100%;
 } //html, body
 
+@include generate-grid;
 .wrapper {
-  background: darken($bg-col, 20%);
+  // background: darken($bg-col, 20%);
   max-width: 1200px;
   margin: 0 auto;
 } //.wrapper
@@ -62,6 +67,18 @@ html, body {
 
   }  //a
 } //.main-nav
+
+.main-content {
+  
+} //.main.content
+
+.post {
+  @extend .span-8-of-12;
+} //.post
+
+.sidebar {
+  @extend .span-4-of-12;
+} //.sidebar
 
 .main-footer {
 

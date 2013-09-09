@@ -1,0 +1,45 @@
+$icon-col: #555 !default;
+
+@font-face {
+   font-family: "entypo";
+    src: url(../assets/font/entypo.ttf);
+    font-weight:400;
+}
+.icon {
+  padding: .1em;
+  vertical-align: middle;
+  font-family: "entypo"; 
+  font-size: 3em;
+  text-decoration: none !important;
+  color: $icon-col;
+}
+    a:-webkit-any-link {
+      text-decoration: none;
+    }
+    .nav-home {
+      vertical-align: middle;
+    }
+.nav-home:before {
+  @extend .icon;
+  content: "\2302";
+}
+.nav-about:before {
+  @extend .icon;
+  content: "\E722";
+}
+.nav-contact:before {
+  @extend .icon;
+  content: "\2709";
+}
+.nav-calendar:before {
+  @extend .icon;
+  content: "\1F4C5";
+}
+.nav-gallery:before {
+  @extend .icon;
+  content: "\1F304";
+}
+.nav-home:before {
+  @extend .icon;
+  content: "\2302";
+}

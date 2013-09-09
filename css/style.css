@@ -84,93 +84,6 @@ hr {
 input, select {
   vertical-align: middle; }
 
-/*  GRID OF TWELVE   ============================================================================= */
-.span_12_of_12, .main-header {
-  width: 100%; }
-
-.span_11_of_12 {
-  width: 91.46%; }
-
-.span_10_of_12 {
-  width: 83%; }
-
-.span_9_of_12 {
-  width: 74.54%; }
-
-.span_8_of_12 {
-  width: 66.08%; }
-
-.span_7_of_12 {
-  width: 57.62%; }
-
-.span_6_of_12 {
-  width: 49.16%; }
-
-.span_5_of_12 {
-  width: 40.7%; }
-
-.span_4_of_12 {
-  width: 32.24%; }
-
-.span_3_of_12 {
-  width: 23.78%; }
-
-.span_2_of_12 {
-  width: 15.32%; }
-
-.span_1_of_12 {
-  width: 6.86%; }
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .span_12_of_12, .main-header {
-    width: 100%; }
-
-  .span_11_of_12 {
-    width: 100%; }
-
-  .span_10_of_12 {
-    width: 100%; }
-
-  .span_9_of_12 {
-    width: 100%; }
-
-  .span_8_of_12 {
-    width: 100%; }
-
-  .span_7_of_12 {
-    width: 100%; }
-
-  .span_6_of_12 {
-    width: 100%; }
-
-  .span_5_of_12 {
-    width: 100%; }
-
-  .span_4_of_12 {
-    width: 100%; }
-
-  .span_3_of_12 {
-    width: 100%; }
-
-  .span_2_of_12 {
-    width: 100%; }
-
-  .span_1_of_12 {
-    width: 100%; } }
-.col {
-  display: block;
-  float: left;
-  margin: 1% 0 1% 1.6%; }
-
-.col:first-child {
-  margin-left: 0; }
-
-/* all browsers except IE6 and lower */
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-@media only screen and (max-width: 480px) {
-  .col {
-    margin: 1% 0 1% 0%; } }
 @font-face {
   font-family: "Ampersand";
   src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
@@ -197,7 +110,7 @@ pre code {
  *
  */
 html {
-  font: normal 112.5%/1.65 serif; }
+  font: normal 100%/1.65 "Proxima Nova", sans-serif; }
 
 body {
   -webkit-hyphens: auto;
@@ -217,48 +130,48 @@ h1, h2, h3, h4, h5, h6 {
 
 .tera {
   font-size: 117px;
-  font-size: 6.5rem;
-  margin-bottom: 0.25385rem; }
+  font-size: 7.3125rem;
+  margin-bottom: 0.22564rem; }
 
 .giga {
   font-size: 90px;
-  font-size: 5rem;
-  margin-bottom: 0.33rem; }
+  font-size: 5.625rem;
+  margin-bottom: 0.29333rem; }
 
 .mega {
   font-size: 72px;
-  font-size: 4rem;
-  margin-bottom: 0.4125rem; }
+  font-size: 4.5rem;
+  margin-bottom: 0.36667rem; }
 
 .alpha, h1 {
   font-size: 60px;
-  font-size: 3.33333rem;
-  margin-bottom: 0.495rem; }
+  font-size: 3.75rem;
+  margin-bottom: 0.44rem; }
 
 .beta, h2 {
   font-size: 48px;
-  font-size: 2.66667rem;
-  margin-bottom: 0.61875rem; }
+  font-size: 3rem;
+  margin-bottom: 0.55rem; }
 
 .gamma, h3 {
   font-size: 36px;
-  font-size: 2rem;
-  margin-bottom: 0.825rem; }
+  font-size: 2.25rem;
+  margin-bottom: 0.73333rem; }
 
 .delta, h4 {
   font-size: 24px;
-  font-size: 1.33333rem;
-  margin-bottom: 1.2375rem; }
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem; }
 
 .epsilon, h5 {
   font-size: 21px;
-  font-size: 1.16667rem;
-  margin-bottom: 1.41429rem; }
+  font-size: 1.3125rem;
+  margin-bottom: 1.25714rem; }
 
 .zeta, h6 {
   font-size: 18px;
-  font-size: 1rem;
-  margin-bottom: 1.65rem; }
+  font-size: 1.125rem;
+  margin-bottom: 1.46667rem; }
 
 p {
   margin: auto auto 1.5em; }
@@ -457,17 +370,228 @@ p + .drop-cap {
  * Extend this object into your markup.
  *
  */
+@font-face {
+  font-family: "entypo";
+  src: url(../assets/font/entypo.ttf);
+  font-weight: 400; }
+
+.icon, .nav-home:before, .nav-about:before, .nav-contact:before, .nav-calendar:before, .nav-gallery:before {
+  padding: .1em;
+  vertical-align: middle;
+  font-family: "entypo";
+  font-size: 3em;
+  text-decoration: none !important;
+  color: #555555; }
+
+a:-webkit-any-link {
+  text-decoration: none; }
+
+.nav-home {
+  vertical-align: middle; }
+
+.nav-home:before {
+  content: "\2302"; }
+
+.nav-about:before {
+  content: "\E722"; }
+
+.nav-contact:before {
+  content: "\2709"; }
+
+.nav-calendar:before {
+  content: "\1F4C5"; }
+
+.nav-gallery:before {
+  content: "\1F304"; }
+
+.nav-home:before {
+  content: "\2302"; }
+
 .box {
-  border-sizing: border-box;
+  box-sizing: border-box;
   padding: 1em;
-  margin: 0 1em 1em 0;
-  border-radius: 3px; }
+  margin-top: 0.8%;
+  margin-bottom: 0.8%;
+  border-radius: 3px;
+  background: #bbbbbb; }
 
 html, body {
   background: url(""), #eeeeee;
   height: 100%; }
 
+.container-12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+.container-12 .span-1-of-12 {
+  width: 6.73333%; }
+
+.container-12 .prefix-1 {
+  padding-left: 8.33333%; }
+.container-12 .suffix-1 {
+  padding-right: 8.33333%; }
+
+.container-12 .push-1 {
+  left: 8.33333%; }
+
+.container-12 .pull-1 {
+  left: -8.33333%; }
+
+.container-12 .span-2-of-12 {
+  width: 15.06667%; }
+
+.container-12 .prefix-2 {
+  padding-left: 16.66667%; }
+.container-12 .suffix-2 {
+  padding-right: 16.66667%; }
+
+.container-12 .push-2 {
+  left: 16.66667%; }
+
+.container-12 .pull-2 {
+  left: -16.66667%; }
+
+.container-12 .span-3-of-12 {
+  width: 23.4%; }
+
+.container-12 .prefix-3 {
+  padding-left: 25%; }
+.container-12 .suffix-3 {
+  padding-right: 25%; }
+
+.container-12 .push-3 {
+  left: 25%; }
+
+.container-12 .pull-3 {
+  left: -25%; }
+
+.container-12 .span-4-of-12, .container-12 .sidebar {
+  width: 31.73333%; }
+
+.container-12 .prefix-4 {
+  padding-left: 33.33333%; }
+.container-12 .suffix-4 {
+  padding-right: 33.33333%; }
+
+.container-12 .push-4 {
+  left: 33.33333%; }
+
+.container-12 .pull-4 {
+  left: -33.33333%; }
+
+.container-12 .span-5-of-12 {
+  width: 40.06667%; }
+
+.container-12 .prefix-5 {
+  padding-left: 41.66667%; }
+.container-12 .suffix-5 {
+  padding-right: 41.66667%; }
+
+.container-12 .push-5 {
+  left: 41.66667%; }
+
+.container-12 .pull-5 {
+  left: -41.66667%; }
+
+.container-12 .span-6-of-12 {
+  width: 48.4%; }
+
+.container-12 .prefix-6 {
+  padding-left: 50%; }
+.container-12 .suffix-6 {
+  padding-right: 50%; }
+
+.container-12 .push-6 {
+  left: 50%; }
+
+.container-12 .pull-6 {
+  left: -50%; }
+
+.container-12 .span-7-of-12 {
+  width: 56.73333%; }
+
+.container-12 .prefix-7 {
+  padding-left: 58.33333%; }
+.container-12 .suffix-7 {
+  padding-right: 58.33333%; }
+
+.container-12 .push-7 {
+  left: 58.33333%; }
+
+.container-12 .pull-7 {
+  left: -58.33333%; }
+
+.container-12 .span-8-of-12, .container-12 .post {
+  width: 65.06667%; }
+
+.container-12 .prefix-8 {
+  padding-left: 66.66667%; }
+.container-12 .suffix-8 {
+  padding-right: 66.66667%; }
+
+.container-12 .push-8 {
+  left: 66.66667%; }
+
+.container-12 .pull-8 {
+  left: -66.66667%; }
+
+.container-12 .span-9-of-12 {
+  width: 73.4%; }
+
+.container-12 .prefix-9 {
+  padding-left: 75%; }
+.container-12 .suffix-9 {
+  padding-right: 75%; }
+
+.container-12 .push-9 {
+  left: 75%; }
+
+.container-12 .pull-9 {
+  left: -75%; }
+
+.container-12 .span-10-of-12 {
+  width: 81.73333%; }
+
+.container-12 .prefix-10 {
+  padding-left: 83.33333%; }
+.container-12 .suffix-10 {
+  padding-right: 83.33333%; }
+
+.container-12 .push-10 {
+  left: 83.33333%; }
+
+.container-12 .pull-10 {
+  left: -83.33333%; }
+
+.container-12 .span-11-of-12 {
+  width: 90.06667%; }
+
+.container-12 .prefix-11 {
+  padding-left: 91.66667%; }
+.container-12 .suffix-11 {
+  padding-right: 91.66667%; }
+
+.container-12 .push-11 {
+  left: 91.66667%; }
+
+.container-12 .pull-11 {
+  left: -91.66667%; }
+
+.container-12 .span-12-of-12 {
+  width: 98.4%; }
+
+.container-12 .prefix-12 {
+  padding-left: 100%; }
+.container-12 .suffix-12 {
+  padding-right: 100%; }
+
+.container-12 .push-12 {
+  left: 100%; }
+
+.container-12 .pull-12 {
+  left: -100%; }
+
 .wrapper {
-  background: #bbbbbb;
   max-width: 1200px;
   margin: 0 auto; }
