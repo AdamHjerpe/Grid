@@ -34,15 +34,15 @@
 // -------------------------------------//
 //the serif boolean var can be redeclared from another stylesheet. However
 //the var must be placed after your @import "typeplate.scss";
-$serif-boolean: true !default;
+$serif-boolean: false !default;
 
 $font-family: if($serif-boolean, serif, sans-serif) !default; // Non-font-face font-stack
 
 $font-weight: normal !default;
 $line-height: 1.65 !default;
-$font-size: 112.5 !default; // percentage value (16 * 112.5% = 18px)
+$font-size: 100 !default; // percentage value (16 * 112.5% = 18px)
 $font-base: 16 * ($font-size/100) !default; // converts our percentage to a pixel value
-$custom-font-family: false !default; // Custom font-face stack, if set will be added to the $font-family
+$custom-font-family: "Proxima Nova" !default; // Custom font-face stack, if set will be added to the $font-family
 $measure: $font-base * $line-height;
 
 
