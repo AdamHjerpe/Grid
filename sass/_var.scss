@@ -5,4 +5,14 @@
 // Background
 $bg-col: #eee; // Fallback main color
 $bg-img: url(''), $bg-col; // For use 
-$background: $bg-img;
+$background: $bg-img; 
+
+// Styling
+$border-1: 1px solid #ccc;
+// Navigation
+$nav-size: 4em;
+$nav-home-col: #bada55;
+$nav-about-col: #bada55;
+$nav-contact-col: #bada55;
+$nav-calendar-col: #bada55;
+$nav-gallery-col: #bada55;
