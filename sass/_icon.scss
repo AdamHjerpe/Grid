@@ -6,11 +6,12 @@ $icon-col: #555 !default;
     src: url(../assets/font/entypo.ttf);
     font-weight:400;
 }
-.icon {
+.nav-icon {
+  margin: 0 0.4em;
   line-height: $nav-size;
   vertical-align: middle;
   font-family: "entypo"; 
-  font-size: 2em;
+  font-size: 3em;
   text-decoration: none !important;
   color: $icon-col;
 }
@@ -21,26 +22,26 @@ $icon-col: #555 !default;
       vertical-align: middle;
     }
 .nav-home:before {
-  @extend .icon;
+  @extend .nav-icon;
   content: "\2302";
 }
 .nav-about:before {
-  @extend .icon;
+  @extend .nav-icon;
   content: "\E722";
 }
 .nav-contact:before {
-  @extend .icon;
+  @extend .nav-icon;
   content: "\2709";
 }
 .nav-calendar:before {
-  @extend .icon;
+  @extend .nav-icon;
   content: "\1F4C5";
 }
 .nav-gallery:before {
-  @extend .icon;
+  @extend .nav-icon;
   content: "\1F304";
 }
 .nav-home:before {
-  @extend .icon;
+  @extend .nav-icon;
   content: "\2302";
 }
