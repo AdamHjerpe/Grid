@@ -1,0 +1,117 @@
+@import "var";
+.main-nav {
+  max-width: $nav-size;
+  height: 100%;  //a
+     -webkit-flex: 1 6 $nav-size;
+           flex: 1 6 $nav-size;
+   -webkit-order: 1;
+           order: 1;
+  li {
+    position:relative;
+    width: $nav-size;
+    height: $nav-size;
+    padding: 0;
+    margin: 0;
+    border-bottom: $border-1;
+  }
+    @media all and (max-width: 640px) {
+      max-width: 100%;
+    }
+} //.main-nav
+
+$nav-base-col: #555 !default;
+
+@font-face {
+   font-family: "entypo";
+    src: url(../assets/font/entypo.ttf);
+    font-weight:400;
+}
+.nav-icon {
+  top: 0;
+  position: absolute;
+  width: $nav-size;
+  height: $nav-size;
+  line-height: $nav-size;
+  text-transform: uppercase;
+  font-size: 80%;
+  border-bottom: $border-1;
+  &:hover {
+    content: normal;
+    min-width: $nav-size;
+    padding: 0 1rem 0 3.5rem;
+    width: auto;
+    border-bottom: $border-1;
+  }
+  &::before {
+    left: 0;
+    padding: 0 1rem;
+    width: $nav-size;
+    display: block;
+    position: absolute;
+    font-family: "entypo"; 
+    font-size: 3rem;
+    text-decoration: none !important;
+    //color: $icon-col;
+  }
+}
+    a:-webkit-any-link {
+      text-decoration: none;
+    }
+    .nav-home {
+      vertical-align: middle;
+    }
+
+@mixin nav-icon($name, $color, $content) {
+  $name: home !default;
+  $color: red !default;
+  $content: "m" !default;
+  .nav-#{$name} {
+    @extend .nav-icon;
+    color: transparent;
+    background: $nav-base-col;
+    &:hover {
+      background: $color;
+      color: $nav-base-col;
+      &::before {
+        color: $nav-base-col;
+      }
+    }
+    &::before {
+      content: $content;
+      color: $color;
+      &:hover {
+        background: $color;
+        color: $nav-base-col;
+      } //&:hover
+    }
+  }
+}
+@include nav-icon(
+  "home", // Name of class
+  rgba(46, 204, 113,1.0), // Color
+  "\2302"
+  ) {}
+
+@include nav-icon(
+  "about", // Name of class
+  rgba(241, 196, 15,1.0), // Color
+  "\E722"
+  ) {}
+
+@include nav-icon(
+  "contact", // Name of class
+  rgba(155, 89, 182,1.0), // Color
+  "\2709"
+  ) {}
+
+@include nav-icon(
+  "calendar", // Name of class
+  rgba(52, 152, 219,1.0), // Color
+  "\1F4C5"
+  ) {}
+
+@include nav-icon(
+  "gallery", // Name of class
+  rgba(192, 57, 43,1.0), // Color
+  "\1F304"
+  ) {}
