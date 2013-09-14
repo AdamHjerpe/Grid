@@ -38,7 +38,7 @@ $serif-boolean: false !default;
 
 $font-family: if($serif-boolean, serif, sans-serif) !default; // Non-font-face font-stack
 
-$font-weight: normal !default;
+$font-weight: lighter !default;
 $line-height: 1.65 !default;
 $font-size: 100 !default; // percentage value (16 * 112.5% = 18px)
 $font-base: 16 * ($font-size/100) !default; // converts our percentage to a pixel value
