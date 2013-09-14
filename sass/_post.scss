@@ -1,0 +1,18 @@
+.post {
+  float: left;
+  margin: 1em 0 0 1em;
+  max-width: 37em;
+  background: #eee;
+  //width:30%;
+    border: $border-1;
+  img {
+    width: 100%;
+    height: auto;
+  } //img
+  .post-text {
+    overflow: hidden;
+    height: auto;
+    padding: 1em;
+    font-size: 80%;
+  }
+} //.post

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "entypo";
+  src: url(../assets/font/entypo.ttf);
+  font-weight: 400; }
+
+.nav-icon, .nav-home:before, .nav-about:before, .nav-contact:before, .nav-calendar:before, .nav-gallery:before {
+  margin: 0 0.4em;
+  line-height: 4rem;
+  vertical-align: middle;
+  font-family: "entypo";
+  font-size: 3em;
+  text-decoration: none !important; }
+
+a:-webkit-any-link {
+  text-decoration: none; }
+
+.nav-home {
+  vertical-align: middle; }
+
+.nav-home:before {
+  content: "\2302";
+  color: #2ecc71; }
+  .nav-home:before:hover {
+    background: #2ecc71;
+    color: #555555; }
+
+.nav-about:before {
+  content: "\E722";
+  color: #f1c40f; }
+  .nav-about:before:hover {
+    background: #f1c40f;
+    color: #555555; }
+
+.nav-contact:before {
+  content: "\2709";
+  color: #9b59b6; }
+  .nav-contact:before:hover {
+    background: #9b59b6;
+    color: #555555; }
+
+.nav-calendar:before {
+  content: "\1F4C5";
+  color: #3498db; }
+  .nav-calendar:before:hover {
+    background: #3498db;
+    color: #555555; }
+
+.nav-gallery:before {
+  content: "\1F304";
+  color: #c0392b; }
+  .nav-gallery:before:hover {
+    background: #c0392b;
+    color: #555555; }
+
+.nav-home:before {
+  content: "\2302";
+  color: #2ecc71; }
+  .nav-home:before:hover {
+    background: #2ecc71;
+    color: #555555; }

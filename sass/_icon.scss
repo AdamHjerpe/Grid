@@ -13,7 +13,7 @@ $icon-col: #555 !default;
   font-family: "entypo"; 
   font-size: 3em;
   text-decoration: none !important;
-  color: $icon-col;
+  //color: $icon-col;
 }
     a:-webkit-any-link {
       text-decoration: none;
@@ -24,24 +24,54 @@ $icon-col: #555 !default;
 .nav-home:before {
   @extend .nav-icon;
   content: "\2302";
+  color: $nav-home-col;
+  &:hover {
+    background: $nav-home-col;
+    color: $icon-col;
+  } //&:hover
 }
 .nav-about:before {
   @extend .nav-icon;
   content: "\E722";
+  color: $nav-about-col;
+  &:hover {
+    background: $nav-about-col;
+    color: $icon-col;
+  } //&:hover
 }
 .nav-contact:before {
   @extend .nav-icon;
   content: "\2709";
+  color: $nav-contact-col;
+  &:hover {
+    background: $nav-contact-col;
+    color: $icon-col;
+  } //&:hover
 }
 .nav-calendar:before {
   @extend .nav-icon;
   content: "\1F4C5";
+  color: $nav-calendar-col;
+  &:hover {
+    background: $nav-calendar-col;
+    color: $icon-col;
+  } //&:hover
 }
 .nav-gallery:before {
   @extend .nav-icon;
   content: "\1F304";
+  color: $nav-gallery-col;
+  &:hover {
+    background: $nav-gallery-col;
+    color: $icon-col;
+  } //&:hover
 }
 .nav-home:before {
   @extend .nav-icon;
   content: "\2302";
+  color: $nav-home-col;
+  &:hover {
+    background: $nav-home-col;
+    color: $icon-col;
+  } //&:hover
 }

@@ -13,8 +13,11 @@ $border-1: 1px solid #ccc;
 $header-size: 5rem;
 // Navigation
 $nav-size: 4rem;
-$nav-home-col: #bada55;
-$nav-about-col: #bada55;
-$nav-contact-col: #bada55;
-$nav-calendar-col: #bada55;
-$nav-gallery-col: #bada55;
+
+$nav-base-col: $bg-col !default;
+$nav-home-col: rgba(46, 204, 113,1.0); // Emerald, green
+$nav-about-col: rgba(241, 196, 15,1.0); // Sun Flower, yellow
+$nav-contact-col: rgba(155, 89, 182,1.0); // Amethyst, purple
+$nav-calendar-col: rgba(52, 152, 219,1.0); // Peter River, blue
+$nav-gallery-col: rgba(192, 57, 43,1.0); // Pomegranate, red
+

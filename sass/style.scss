@@ -26,7 +26,7 @@
 // Typeplate import
 @import "typeplate";
 @import "typography";
-@import "icon";
+//@import "icon";
 
 .box {
   box-sizing: border-box;
@@ -59,44 +59,10 @@ html, body {
   content: "\1F4FD";
   line-height: $header-size;
 } //.logo
-$nav-size: 4em;
-.main-nav {
-  max-width: $nav-size;
-  height: 100%;  //a
-     -webkit-flex: 1 6 $nav-size;
-           flex: 1 6 $nav-size;
-   -webkit-order: 1;
-           order: 1;
-  //border-right: $border-1;
-  ul {
 
-  } //ul
-  li {
-    position: relative;
-    width: $nav-size;
-    height: $nav-size;
-    border-bottom: $border-1;
-      &:hover{
-        width: auto;
-       a {
-        line-height: $nav-size;
-        position: absolute; 
-        top: 0; 
-        left: 3.5em;
-        display: block;
-      }
-    }
-  } //li
+// Nav Import
+@import "sidenav";
 
-  a{
-    display: none;
-    line-height: $nav-size / 2;
-    &:hover {
-      display: block;
-      content: normal;
-    }
-  }
-} //.main-nav
 .flexbox {
   display: -webkit-flex;
   display:         flex;
@@ -120,24 +86,7 @@ $nav-size: 4em;
   justify-content: flex-start;
 } //.main.content
 
-.post {
-  float: left;
-  margin: 1em 0 0 1em;
-  max-width: 37em;
-  background: #eee;
-  //width:30%;
-    border: $border-1;
-  img {
-    width: 100%;
-    height: auto;
-  } //img
-  .post-text {
-    overflow: hidden;
-    height: auto;
-    padding: 1em;
-    font-size: 80%;
-  }
-} //.post
+@import "post";
 
 .sidebar {
   padding: 1em;
@@ -158,3 +107,27 @@ $nav-size: 4em;
   background: #123;
 
 } //.main-footer
+
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+  
+   .flexbox, .main-content {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+   .main-content {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+   }
+
+   .flexbox .main-content, .flexbox .main-nav, .flexbox .sidebar {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+  
+   .flexbox .main-nav, .flexbox .sidebar, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+ }
