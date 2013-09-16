@@ -55,6 +55,16 @@ html, body {
 } //.main-header
 
 .logo {
+  padding: 0 2em;
+  color: $bg-col;
+  text-transform: uppercase;
+  span {
+    font-weight: 700;
+    font-kerning: 2px;
+  }
+}
+
+.logo {
   content: "\1F4FD";
   line-height: $header-size;
 } //.logo

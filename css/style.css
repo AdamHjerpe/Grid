@@ -313,6 +313,14 @@ html, body {
   background: #333; }
 
 .logo {
+  padding: 0 2em;
+  color: #eeeeee;
+  text-transform: uppercase; }
+  .logo span {
+    font-weight: 700;
+    font-kerning: 2px; }
+
+.logo {
   content: "\1F4FD";
   line-height: 5rem; }
 
